@@ -8,24 +8,12 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Banner ASCII untuk Nginx
-NGINX_BANNER="${GREEN}
-  _  _      _       __  __
- | \| |__ _(_)_ _   \ \/ /
- | .` / _` | | ' \   >  < 
- |_|\_\__, |_|_||_| /_/\_\
-      |___/               
-  WordPress with Nginx
-${NC}"
+clear
+NGINX_BANNER="${GREEN}  _  _      _       __  __\n | \\| |__ _(_)_ _   \\ \\/ /\n | .\` / _\` | | ' \\   >  < \n |_|\\_\__, |_|_||_| /_/\\_\\ \n      |___/               \n  WordPress with Nginx${NC}"
 
 # Banner ASCII untuk Apache2
-APACHE2_BANNER="${GREEN}
-    _                 _        ___ 
-   /_\  _ __  __ _ __| |_  ___|_  )
-  / _ \| '_ \/ _` / _| ' \/ -_)/ / 
- /_/ \_\ .__/\__,_\__|_||_\___/___|
-       |_|                         
-  WordPress with Apache2
-${NC}"
+clear
+APACHE2_BANNER="${GREEN}    _                 _        ___ \n   /_\\  _ __  __ _ __| |_  ___|_  )\n  / _ \\| '_ \\/ _\` / _| ' \\/ -_)/ / \n /_/ \\_\\ .__/\\__,_\\__|_||_\\___/___|\n       |_|                         \n  WordPress with Apache2${NC}"
 
 # Periksa apakah pengguna memiliki hak akses root
 if [ "$(id -u)" != "0" ]; then
