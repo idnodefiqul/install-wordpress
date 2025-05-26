@@ -8,8 +8,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Banner ASCII untuk Nginx
-NGINX_BANNER="
-${GREEN}
+NGINX_BANNER="${GREEN}
   _  _      _       __  __
  | \| |__ _(_)_ _   \ \/ /
  | .` / _` | | ' \   >  < 
@@ -19,8 +18,7 @@ ${GREEN}
 ${NC}"
 
 # Banner ASCII untuk Apache2
-APACHE2_BANNER="
-${GREEN}
+APACHE2_BANNER="${GREEN}
     _                 _        ___ 
    /_\  _ __  __ _ __| |_  ___|_  )
   / _ \| '_ \/ _` / _| ' \/ -_)/ / 
