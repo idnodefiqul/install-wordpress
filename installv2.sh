@@ -8,7 +8,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Banner ASCII untuk Nginx
-NGINX_BANNER=$(cat << EOF
+NGINX_BANNER="
 ${GREEN}
   _  _      _       __  __
  | \| |__ _(_)_ _   \ \/ /
@@ -16,12 +16,10 @@ ${GREEN}
  |_|\_\__, |_|_||_| /_/\_\
       |___/               
   WordPress with Nginx
-${NC}
-EOF
-)
+${NC}"
 
 # Banner ASCII untuk Apache2
-APACHE2_BANNER=$(cat << EOF
+APACHE2_BANNER="
 ${GREEN}
     _                 _        ___ 
    /_\  _ __  __ _ __| |_  ___|_  )
@@ -29,9 +27,7 @@ ${GREEN}
  /_/ \_\ .__/\__,_\__|_||_\___/___|
        |_|                         
   WordPress with Apache2
-${NC}
-EOF
-)
+${NC}"
 
 # Periksa apakah pengguna memiliki hak akses root
 if [ "$(id -u)" != "0" ]; then
